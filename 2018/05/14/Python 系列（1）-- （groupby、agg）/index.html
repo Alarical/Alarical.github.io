@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="凉茶换风月的博客">
 <meta property="og:description" content="Python系列 （一）标签（空格分隔）： Python  — Alraic 2018-5-14 19:42:22   最近正好又在处理数据，大约百万量级的数据，一个简单的groupby操作，服务器就能跑段时间，深感无语。也借此总结下pandas的groupby、apply等操作。  这里我用的是iris鸢尾花数据集。（网上可以下载到，当然也可以从sklearn.datasets里导入） 1234">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-16T03:21:54.007Z">
+<meta property="og:image" content="//www.herepy.com/assets/image_bolg/iris01.png">
+<meta property="og:updated_time" content="2018-05-16T03:26:51.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凉茶换风月的博客">
 <meta name="twitter:description" content="Python系列 （一）标签（空格分隔）： Python  — Alraic 2018-5-14 19:42:22   最近正好又在处理数据，大约百万量级的数据，一个简单的groupby操作，服务器就能跑段时间，深感无语。也借此总结下pandas的groupby、apply等操作。  这里我用的是iris鸢尾花数据集。（网上可以下载到，当然也可以从sklearn.datasets里导入） 1234">
+<meta name="twitter:image" content="//www.herepy.com/assets/image_bolg/iris01.png">
   
     <link rel="alternative" href="/atom.xml" title="凉茶换风月的博客" type="application/atom+xml">
   
@@ -154,6 +156,7 @@
 <p>  最近正好又在处理数据，大约百万量级的数据，一个简单的groupby操作，服务器就能跑段时间，深感无语。也借此总结下<strong>pandas</strong>的groupby、apply等操作。<br>  这里我用的是iris鸢尾花数据集。（网上可以下载到，当然也可以从sklearn.datasets里导入）</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets  </span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris  </span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> tree  </span><br><span class="line">    </span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">iris = pd.DataFrame(datasets.load_iris().data, columns = [<span class="string">'speal_length'</span>,<span class="string">'speal_width'</span>,<span class="string">'petal_length'</span>,<span class="string">'petal_width'</span>])</span><br><span class="line">target = pd.DataFrame(datasets.load_iris().target, columns = [<span class="string">'species'</span>])</span><br><span class="line"></span><br><span class="line">iris = pd.concat([iris,target],axis = <span class="number">1</span>)</span><br><span class="line">iris.head()</span><br></pre></td></tr></table></figure>
 <p>![avatar]([\assets\image_bolg\iris01.png]</p>
+<p><img src="/assets/image_bolg/iris01.png" alt="avatar"> </p>
 
       
 
