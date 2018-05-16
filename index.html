@@ -19,8 +19,6 @@
     <link rel="alternative" href="/atom.xml" title="凉茶换风月的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
-  
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
   
@@ -46,7 +44,7 @@
 			<img src="/assets/image/image.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">暂时没有名字</a></h1>
+		  <h1 class="header-author"><a href="/">Alaric</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">听大多数人的意见，和少数人沟通，自己做决定。</p>
@@ -100,7 +98,7 @@
 				<img src="/assets/image/image.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">暂时没有名字</h1>
+			  <h1 class="header-author js-header-author">Alaric</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>听大多数人的意见，和少数人沟通，自己做决定。<i class="icon icon-quo-right"></i></p>
@@ -153,7 +151,7 @@
 <p>— Alraic 2018-5-14 19:42:22</p>
 <p>  最近正好又在处理数据，大约百万量级的数据，一个简单的groupby操作，服务器就能跑段时间，深感无语。也借此总结下<strong>pandas</strong>的groupby、apply等操作。<br>  这里我用的是iris鸢尾花数据集。（网上可以下载到，当然也可以从sklearn.datasets里导入）</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets  </span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris  </span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> tree  </span><br><span class="line">    </span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">iris = pd.DataFrame(datasets.load_iris().data, columns = [<span class="string">'speal_length'</span>,<span class="string">'speal_width'</span>,<span class="string">'petal_length'</span>,<span class="string">'petal_width'</span>])</span><br><span class="line">target = pd.DataFrame(datasets.load_iris().target, columns = [<span class="string">'species'</span>])</span><br><span class="line"></span><br><span class="line">iris = pd.concat([iris,target],axis = <span class="number">1</span>)</span><br><span class="line">iris.head()</span><br></pre></td></tr></table></figure>
-<p><img src="C:\Users\ZHOURU~1\AppData\Local\Temp\1526392874351.png" alt="1526392874351"></p>
+<p><img src="D:\Hexo\source\assets\image_bolg\CNAME" alt="1526392874351"></p>
 
       
 
@@ -206,7 +204,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 暂时没有名字
+    		&copy; 2018 Alaric
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -346,18 +344,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
